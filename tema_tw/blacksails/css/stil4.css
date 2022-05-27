@@ -1,0 +1,121 @@
+body, html{
+    height:100%;
+    background-image:url(../imagini/foaie.jpg);
+}
+
+.container
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+/*
+.container div
+{
+    height:50%;
+}
+*/
+.div_unu, .div_doi
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:baseline;
+    justify-content:center;
+    gap:20px;
+}
+.div_patru
+{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+.div_trei
+{
+    margin-top:10px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:baseline;
+    justify-content:center;
+    align-content: space-between;
+    gap:50px;
+}
+.div_trei #peste_poza {
+    width:65%;
+}
+#first_picture{
+    width:100%;
+    position:relative;
+}
+#text{
+    display:flex;
+    flex-direction:column;
+}
+#text h1{
+    align-self:center;
+    font-family:'Pirata One';
+    font-size:40px;
+}
+#generate {
+    align-self:center;
+    font-family:'Pirata One';
+    font-size:40px;
+    background-color: blanchedalmond;
+
+}
+.div_unu h1, .div_doi h1
+{
+    align-self:center;
+    width:100%;
+    text-align:center;
+    font-family:'Pirata One';
+    font-weight: lighter;
+    font-size:40px;
+}
+.desc
+{
+    max-width:150px;
+    text-align: center;
+    font-size:20px;
+}
+.gallery img
+{
+    transition:transform .5s ease-in;
+}
+.gallery img:hover
+{
+    transform: scale(1.2);
+}
+.gallery2 img
+{
+    transition: transform .5s ease-out;
+}
+.gallery2 img:hover
+{
+    transform: scale(1.2);
+}
+
+@media screen and (min-width:400px)
+{
+.gallery img, .gallery2 img
+{
+    max-width:150px;
+}
+}
+@media screen and (max-width:400px)
+{
+.gallery img, .gallery2 img
+{
+    max-height:150px;
+}
+.div_unu, .div_doi
+{
+    flex-direction:column;
+    align-items:center;
+}
+}
+

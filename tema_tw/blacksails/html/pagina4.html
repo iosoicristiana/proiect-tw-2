@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <title> pirates </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="../css/stil4.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+
+	</head>
+<body>
+    <div class="container">
+            <div class="div_unu">
+                <h1> nave </h1>
+                <div class="gallery">
+                           <img onclick="showpoza(this.src)"  src="../imagini/adventure-galley-icon.jpg" alt="adventure galley"> 
+                    </a>
+                           <div class="desc"> Adventure Galley</div>
+                </div>
+                   <div class="gallery">
+                           <img onclick="showpoza(this.src)" src="../imagini/golden-hind-icon.jpg" alt="golden hind"> 
+                   </a>
+                           <div class="desc"> Golden Hind </div>
+                </div>
+                   <div class="gallery">
+                           <img onclick="showpoza(this.src)"  src="../imagini/queen-annes-revenge-icon.jpg" alt="queen annes revenge"> 
+                   </a>
+                           <div class="desc"> Queen Anne's Revenge </div>
+                </div>        
+                   <div class="gallery">
+                           <img onclick="showpoza(this.src)" src="../imagini/royal-fortune.jpg" alt="royal fortune"> 
+                   </a>
+                           <div class="desc"> Royal Fortune </div>
+                </div>             
+                   <div class="gallery">
+                           <img onclick="showpoza(this.src)" src="../imagini/fancy.jpg" alt="fancy"> 
+                   </a>
+                           <div class="desc"> Fancy </div>
+                </div> 
+                   <div class="gallery">
+                           <img onclick="showpoza(this.src)" src="../imagini/ranger.jpg" alt="ranger"> 
+                   </a>
+                           <div class="desc"> Ranger </div>
+                </div> 
+                   <div class="gallery">
+                           <img onclick="showpoza(this.src)"  src="../imagini/bachelorsdelight.jpg" alt="bachelors delight"> 
+                   </a>
+                           <div class="desc"> Bachelor's Delight </div>
+                </div> 
+                   <div class="gallery">
+                           <img onclick="showpoza(this.src)" src="../imagini/brigantine-icon.jpg" alt="good fortune"> 
+                   </a>
+                           <div class="desc"> Good Fortune </div>
+                </div>             
+            </div>
+            <div class="div_trei">
+                   <div id="text">
+                    <h1> choose the ship you want by clicking on it and go on an adventure using WASD! </h1>
+                    <button id="generate" onclick="generatebackground()"> try another map!</button>
+                   </div> 
+        <div id="peste_poza"> <img src="../imagini/treasure_map.jpg" alt="treasure map" id="first_picture"> 
+                    <div id="move" style="height:100px; width:100px;position:relative; left:150px; top:-150px">
+                <img id="moveimg" style="height:100px; width:100px;" src="../imagini/adventure-galley-icon.jpg" ></div> 
+        </div>
+            </div>
+            <div class="div_doi">
+                <h1> pirati faimosi </h1>
+            <div class="gallery2"> <img onclick="getalt(this)" src="../imagini/blackbeard.gif" alt="blackbeard"> 
+            <div class="desc"> Blackbeard </div> </div>
+            <div class="gallery2"> <img onclick="getalt(this)" src="../imagini/anne-bonny.gif" alt="anne bonny"> 
+                <div class="desc"> Anne Bonny </div> </div>
+                <div class="gallery2"> <img onclick="getalt(this)" src="../imagini/edward-low.jpg" alt="edward low"> 
+                    <div class="desc"> Edward Low </div> </div>
+                    <div class="gallery2"> <img onclick="getalt(this)" src="../imagini/Charles_Vane.jpg" alt="charles vane"> 
+                        <div class="desc"> Charles Vane </div> </div>
+                        <div class="gallery2"> <img onclick="getalt(this)" src="../imagini/hornigold.jpg" alt="hornigold"> 
+                            <div class="desc"> Benjamin Hornigold </div> </div>
+                            <div class="gallery2"> <img onclick="getalt(this)" src="../imagini/Rackham_Jack.jpg" alt="rackham"> 
+                                <div class="desc"> Jack Rackham </div> </div>
+                                <div class="gallery2"> <img onclick="getalt(this)" src="../imagini/maryread.png" alt="mary read"> 
+                                    <div class="desc"> Mary Read </div> </div> 
+                                    <div class="gallery2"> <img onclick="getalt(this)" src="../imagini/henryavery.jfif" alt="henry avery"> 
+                                        <div class="desc"> Henry Avery </div> </div>
+        </div>
+        <span class="div_patru">
+                <h1> click on their pictures to select the pirates you love most! (click again to unselect) </h1>
+                <button onclick="sortpirati()"> click here to see your list! </button>
+                <p id="lista_pirati"> </p>
+        </span>
+    </div>
+
+    <script src="../javascript/script_nave.js"></script>
+</body>
+    </html>

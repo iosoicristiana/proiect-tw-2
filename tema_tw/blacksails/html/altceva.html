@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+        <title> treasure island </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <meta charset="UTF-8">
+	</head>
+<body>
+    <button type="button" onclick="functie_dark()"> dark mode </button>
+    <header> <h1> treasure island </h1>
+    <h2> quick survey </h2></header>
+<form id="formular" action="/formular">
+    <div class="patrat3">
+        <h1> tell us about yourself </h1>
+        <label for="name" > Name</label>
+        <input type="text" id="name" name="name"> 
+
+        <br> 
+
+        <label for="Lname" > Last Name</label>
+        <input type="text" id="lname" name="lname">
+         
+        <br>
+       <label for="age"> Age</label>
+       <input type="text" id="age"  name="age">
+        
+       <br>
+   </div>
+
+    <div class="patrat1"> 
+        <h1> did you read treasure island? </h1>
+    <input type="radio" name="read" id="yes"> <label for="yes"> yes </label> <br>
+    <input type="radio" name="not_read" id="no"> <label for="no"> no </label> <br>
+    <input type="radio" name="will_be_read" id="i_will"> <label for="i_will"> no, but i plan on it! </label>
+    </div>
+<!--
+    <div class="patrat2">
+        <h1> what did you like about treasure island?</h1>
+    <input type="checkbox" name="the plot" id="plot"> <label for="plot"> the plot, the story and the adventure</label> <br>
+    <input type="checkbox" name="the characters" id="characters"> <label for="characters"> the characters and the conflict  </label> <br>
+    <input type="checkbox" name="the atmosphere" id="atmosphere"> <label for="atmosphere"> the atmosphere and the themes </label> <br>
+    <input type="checkbox" name="the prose" id="prose"> <label for="prose"> the prose and the writing style</label>
+
+    </div>
+-->
+    <div class="rev">
+        <h1> tell us your thoughts about it! </h1>
+    <textarea id="review" name="review" maxlength="500" rows="5" placeholder=" a review if you've read it, your expectations if you plan on reading it or why you decided you won't give it a try!"></textarea>
+    </div>
+
+    <div class="thanks">
+        <h1> press here to submit your answers! </h1>
+        <input type="submit" value="submit" id="submit">
+        <h5> thank you for your time &lt;3 </h5>
+    </div>
+
+</form>
+    <div class="patrat3">
+        <h1> would you like to read more about pirates and their history?</h1>
+    <a href="pagina3.html"> try here! </a>
+    <br>
+    <a href="blacksails.html">or go back to reading about black sails!</a>
+    </div>
+
+    <div class="patrat1" id="result">
+    </div>
+
+    <script src="../javascript/formular.js"></script>
+</body>
+</html>
+ 
